@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #a9a9a9, #15af15);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.form-container {
+    max-width: 850px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1f7a1f;
+    text-align: center;
+}
+
+h4 {
+    border-bottom: 3px solid #28a745;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #155724;
+    text-align: left;
+}
+
+/* Form Styles */
+label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 6px rgba(40, 167, 69, 0.5);
+    outline: none;
+}
+
+/* Button Styles */
+.btn-submit {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+/* Response Message */
+#responseMessage {
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Sidebar Logo */
+img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 130px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+}

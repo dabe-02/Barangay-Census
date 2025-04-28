@@ -1,0 +1,436 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #a9a9a9, #15af15);
+    font-family: Arial, sans-serif;
+}
+
+.role-tab {
+            cursor: pointer;
+            padding: 10px 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px 5px 0 0;
+            background-color: #f8f9fa;
+            margin-right: 5px;
+            font-weight: bold;
+            transition: all 0.2s;
+     }
+
+        .role-tab.active {
+            background-color:  #32d102;
+            color: white;
+        }
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.main-content.collapsed {
+    margin-left: 80px;
+}
+
+.container {
+    height: 100vh;
+}
+
+/* Style for the main heading */
+h1 {
+    font-size: 3rem; /* Adjust the size as needed */
+    font-weight: bold;
+    color: darkgreen; /* You can modify this */
+}
+
+/* Style for the subtext */
+p {
+    font-size: 1.2rem; /* Adjust as needed */
+    color: #0c180a; /* Slightly darker gray for better readability */
+}
+
+/* Login Card */
+.login-card {
+    background: #f6ecec;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 420px;
+    padding: 45px;
+    text-align: center;
+}
+/* Align form labels to the left */
+form .form-label {
+    display: block;
+    text-align: left;  /* Aligns text to the left */
+    font-weight: solid; /* Makes it bold for better readability */
+    margin-bottom: 5px; /* Adds spacing between label and input */
+}
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes extra padding */
+    margin: 0; /* Removes extra margin */
+    
+    
+}
+
+h1{
+    text-align:left;
+    font-size: medium;
+    
+    
+    
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+
+.sidebar.collapsed {
+    width: 60px; /* Shrinks sidebar */
+}
+
+.sidebar.collapsed #sidebar-title {
+    display: none; /* Hides the title */
+}
+
+.sidebar.collapsed .menu-text {
+    display: none; /* Hides menu text */
+}
+
+.sidebar button {
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.sidebar ul li a:hover {
+    background-color: rgba(193, 197, 193, 0.2); /* Light green background */
+    color:  #15af15; /* Dark green text */
+}
+
+/* Active Link (After Clicking) */
+.sidebar ul li a.active {
+    background-color: #15af15; /* Dark green background */
+    color: white; /* White text */
+}
+
+/* Sidebar Icon Styling */
+.sidebar ul li a i {
+    margin-right: 0px;
+}
+
+
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.sidebar .nav-link span {
+    transition: opacity 0.3s;
+}
+
+.sidebar.collapsed .nav-link span {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar .nav-link i {
+    font-size: 20px;
+}
+/* Ensure sidebar header is properly aligned */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between title & button */
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #064e1f; /* Adjust color if needed */
+}
+
+/* Fix collapse button size & position */
+.sidebar-toggle {
+    width: 30px; /* Smaller button */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* When sidebar is collapsed */
+.sidebar.collapsed .sidebar-header {
+    justify-content: center;
+    padding: 10px 0; /* Adjust padding */
+}
+
+.sidebar.collapsed .sidebar-toggle {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* When sidebar is collapsed, shift main content */
+.sidebar.collapsed + .main-content {
+    margin-left: 60px; /* Move content left */
+    width: calc(100% - 60px); /* Adjust width */
+}
+/* Sidebar Styling with Rounded Edges */
+.sidebar {
+    width: 210px;
+    height: 100vh;
+    position: fixed;
+    background: #d5d8ce;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    padding-top: 20px;
+    border-top-right-radius: 20px;  /* Rounds top right */
+    border-bottom-right-radius: 20px; /* Rounds bottom right */
+}
+/* Logo sidebar styling */
+.sidebar-logo {
+    max-width: 100px; /* Adjust logo size */
+    height: auto;
+}
+/* When sidebar is collapsed */
+.sidebar.collapsed .sidebar-logo {
+    max-width: 40px; /* Smaller logo */
+}
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjust spacing */
+    padding: 0;
+    margin: 0;
+}
+.sidebar.collapsed .nav-link span {
+    display: none;
+}
+
+.sidebar.collapsed .sidebar-header {
+    justify-content: center;
+}
+.sidebar.collapsed .nav-link {
+    justify-content: center; /* Centers icon when collapsed */
+    padding: 18px 0;
+}
+
+
+.sidebar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+/* Hide the logo when the sidebar is collapsed */
+.sidebar.collapsed .sidebar-logo {
+    display: none;
+}
+
+
+
+/* Search & Filter Section */
+.filter-btn {
+    border: none;
+    padding: 8px 16px;
+}
+
+.filter-btn.active {
+    background-color: #212529;
+    color: white;
+}
+
+/* Table Styles */
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.badge {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.position-relative .badge {
+    font-size: 12px;
+    padding: 3px 7px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px; /* Default position */
+    padding: 20px;
+    width: calc(100% - 250px); /* Adjust to fit screen */
+    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+
+
+
+/* Toggle Button */
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.collapsed .toggle-btn {
+    transform: rotate(180deg);
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+  
+}
+
+
+
+.barangay-logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* Input Fields */
+.form-control {
+    border-radius: 15px;
+    padding: 12px;
+    font-size: 15px;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #32d102;
+}
+
+/* Forgot Password Link */
+.text-muted:hover {
+    color: white !important;
+}
+ 
+/* Table styling */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background: #111;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.logo-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.loading-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 2;
+    position: relative;
+}
+
+/* Spinner ring that rotates around the logo */
+.spinner-ring {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 140px;
+    height: 140px;
+    border: 4px solid darkgreen;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spinAround 1s linear infinite;
+    z-index: 1;
+}
+
+/* Spin animation */
+@keyframes spinAround {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* 👈 Semi-transparent white background */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(2px); /* Optional: adds subtle blur to background */
+}

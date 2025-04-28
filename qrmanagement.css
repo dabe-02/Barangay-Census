@@ -1,0 +1,57 @@
+/* Modal Styles */
+#qrModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#qrModal img {
+    max-width: 90%;
+    max-height: 80vh;
+}
+
+#qrModal .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sitio-slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sitio-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.sitio-box-wrapper {
+    flex: 0 0 100%;
+    padding: 10px;
+}
+
+.sitio-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.scrollable-tbody {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+button {
+    cursor: pointer;
+}

@@ -1,0 +1,262 @@
+/* Reset + Font */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #a9a9a9, #15af15);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-color: #eef5ff; /* Added a fallback background color */
+}
+
+/* Layout */
+.login-wrapper {
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #a9a9a9, #15af15);
+}
+
+/* Card */
+.login-container {
+    max-width: 950px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85); /* translucent */
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Info Panel */
+.info-panel {
+    background: linear-gradient(to bottom right, #198754, #0f5f0f);
+    color: white;
+    text-align: center;
+}
+
+.info-panel h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.info-panel p {
+    font-size: 1rem;
+    color: #d2fbd2;
+}
+
+/* Right Form Panel */
+.form-panel {
+    background: transparent;
+}
+
+.barangay-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+h4.fw-bold {
+    font-size: 1.6rem;
+    color: #198754;
+}
+
+.text-muted {
+    font-size: 0.95rem;
+}
+
+/* Role Tabs */
+.role-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.role-tab {
+    cursor: pointer;
+    padding: 10px 24px;
+    border-radius: 12px;
+    background: #f5f5f5;
+    font-weight: 600;
+    color: #444;
+    transition: all 0.3s ease;
+}
+
+.role-tab:hover {
+    background-color: #e2e2e2;
+}
+
+.role-tab.active {
+    background: #198754;
+    color: white;
+    box-shadow: 0 0 10px rgba(25, 135, 84, 0.3);
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 12px;
+    padding: 14px;
+    border: 1px solid #ccc;
+    transition: 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+/* Button */
+.btn-success {
+    border-radius: 12px;
+    padding: 14px;
+    font-weight: 600;
+    background-color: #01b410;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+}
+
+/* Forgot Password */
+a.text-muted:hover {
+    color: #198754 !important;
+    text-decoration: underline;
+}
+
+/* Loading Screen */
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(3px);
+}
+
+.logo-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.loading-logo {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.spinner-ring {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 140px;
+    height: 140px;
+    border: 4px solid #198754;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Password Field Container */
+.position-relative {
+    position: relative;
+}
+
+/* Eye Icon */
+.toggle-password {
+    position: absolute;
+    top: 69%; /* Centers vertically */
+    right: 20px; /* Adjusts horizontal position inside the input */
+    transform: translateY(-50%); /* Vertically centers the icon */
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #444;
+    z-index: 10; /* Ensures the icon is above the input field */
+}
+
+/* Password Input Field */
+.form-control {
+    border-radius: 12px;
+    padding: 14px 20px; /* Ensures there is padding for the icon */
+    border: 1px solid #ccc;
+    transition: 0.2s ease;
+    padding-right: 40px; /* Creates enough space for the eye icon */
+}
+
+.form-control:focus {
+    border-color: #01b410;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+/* Left Panel Styling */
+.left-panel {
+    background-color: #ffffff;
+    padding: 50px;
+}
+
+/* Icon Box */
+.icon-box {
+    border-radius: 12px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.icon-box:hover {
+    transform: translateY(-5px);
+    background-color: #01b410;
+}
+
+.icon-box img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+/* Role Tab Styling */
+.role-tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+}
+
+.role-tab.active {
+    background-color: #01b410;
+    color: #fff;
+    font-weight: bold;
+}
+/* Census QR Connect Titles */
+h2.fw-bold.text-primary.mb-2 {
+    font-size: 2.5rem;
+    color: #198754 !important; /* Bootstrap's 'text-primary' override */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+h5.text-primary {
+    font-size: 1.25rem;
+    color: #198754 !important; /* Bootstrap's 'text-primary' override */
+    text-align: left;
+    margin-bottom: 2rem;
+}
